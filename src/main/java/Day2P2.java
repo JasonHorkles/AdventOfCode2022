@@ -51,6 +51,7 @@ public class Day2P2 {
                 }
             }
 
+            //noinspection DataFlowIssue
             switch (iChose) {
                 case ROCK -> roundPoints += 1;
                 case PAPER -> roundPoints += 2;
