@@ -64,7 +64,6 @@ public class Day7P1 {
         //noinspection resource
         Files.walk(originalPath).forEach(path -> {
             if (path.toFile().isDirectory()) {
-                System.out.println("Calculating size for directory " + path);
                 long size = FileUtils.sizeOfDirectory(path.toFile());
                 if (size <= 100000) totalSize.addAndGet(size);
             }
